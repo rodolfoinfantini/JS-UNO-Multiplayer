@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js" integrity="sha512-iZIBSs+gDyTH0ZhUem9eQ1t4DcEn2B9lHxfRMeGQhyNdSUz+rb+5A3ummX6DQTOIs1XK0gOteOg/LPtSo9VJ+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="mount">
+        <div class="lastcard"></div>
+    </div>
+    <div class="buy">
+        <button class="btnbuy" onclick="buy()">Buy</button>
+    </div>
+    <div class="cards">
+    </div>
+    <div class="colorselect">
+        <button class="red" onclick="selectRed()">Red</button>
+        <button class="green" onclick="selectGreen()">Green</button>
+        <button class="blue" onclick="selectBlue()">Blue</button>
+        <button class="yellow" onclick="selectYellow()">Yellow</button>
+    </div>
+    <div class="waiting">
+        <p class="text">
+            Waiting for players (1)
+        </p>
+        <button>Start now</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

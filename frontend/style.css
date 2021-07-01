@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    background-color: rgb(30,30,30);
+}
+div.cards{
+    position: fixed;
+    border-radius: 5px;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 5px;
+    transform: translateX(-50%);
+    width: fit-content;
+    max-width: 100vw;
+    height: fit-content;
+    display: flex;
+}
+div.cards:not(.yourturn){
+    filter: grayscale(1);
+    transform: translateX(-50%) scale(0.8);
+    bottom: -100px;
+}
+div.card{
+    width: 150px;
+    height: 240px;
+    border: 1px solid black;
+    transition: all ease-in 0.1s;
+    z-index: 0;
+}
+
+div.cards.yourturn div.card:hover{
+    transform: scale(1.3);
+    transform-origin: bottom;
+    filter: grayscale(0);
+    z-index: 1;
+}
+
+div.mount{
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.3);
+    font-size: 30px;
+    color: white;
+}
+
+div.mount .lastcard{
+    width: 150px;
+    height: 240px;
+}
+
+div.waiting{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10,10,10,0.7);
+    z-index: 5;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.waiting button{
+    font-size: 50px;
+}
+
+div.colorselect{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10,10,10,0.7);
+}
+
+div.colorselect button{
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+div.colorselect button.yellow{
+    color: black;
+}
+
+div.buy{
+    position: fixed;
+    bottom: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.buy button{
+    font-size: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.red.value-0{
+    background-image: url(img/red0.png);
+}
+.red.value-1{
+    background-image: url(img/red1.png);
+}
+.red.value-2{
+    background-image: url(img/red2.png);
+}
+.red.value-3{
+    background-image: url(img/red3.png);
+}
+.red.value-4{
+    background-image: url(img/red4.png);
+}
+.red.value-5{
+    background-image: url(img/red5.png);
+}
+.red.value-6{
+    background-image: url(img/red6.png);
+}
+.red.value-7{
+    background-image: url(img/red7.png);
+}
+.red.value-8{
+    background-image: url(img/red8.png);
+}
+.red.value-9{
+    background-image: url(img/red9.png);
+}
+.red.value-block{
+    background-image: url(img/redblock.png);
+}
+.red.value-reverse{
+    background-image: url(img/redreverse.png);
+}
+.red.value-plus2{
+    background-image: url(img/redplus2.png);
+}
